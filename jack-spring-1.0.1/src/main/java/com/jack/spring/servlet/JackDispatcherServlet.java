@@ -66,6 +66,7 @@ public class JackDispatcherServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 
+		// 测试是否依赖注入成功
 		DemoAction demoAction = (DemoAction) beanMap.get("demoAction");
 		demoAction.query(null,null, "jack");
 	}
